@@ -1,0 +1,84 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Avenir';
+  background: #f9f9f9;
+}
+
+.container {
+  max-width: 1000px;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.mainbox > a, .mainbox > a:link, .mainbox > a:visited {
+  text-decoration: none;
+  display: block;
+  color: #999;
+  transition: color .2s;
+  padding-left: 1rem;
+  
+}
+
+a:hover {
+  color:#00b7ff !important;
+}
+
+.position > a, .position > a:link, .position > a:visited {
+  text-decoration: none;
+  color: #999;
+  transition: color .2s;
+}
+
+
+
+.mainbox {
+  width: 400px;
+  border-left: #efefef solid 1px;
+}
+
+.name {
+  color: #333;
+  margin: 0;
+  margin-bottom: .5em;
+  border-left: #333 1px solid;
+  padding-left: 1rem;
+  position: relative;
+  right: 1px;
+}
+
+.heading {
+  color: #333;
+  margin-bottom: .5em;
+  margin-top: 2em;
+  border-left: #333 1px solid;
+  padding-left: 1rem;
+  position: relative;
+  right: 1px;
+}
+
+
+.position, .skills {
+  color: #999;
+  margin: 0;
+  margin-bottom: .25em;
+  padding-left: 1rem;
+}
+
+@media screen and (min-width:48rem) {
+  html {
+    font-size: 120%;
+  }
+}
+
+
+/*# sourceMappingURL=app.css.map*/
