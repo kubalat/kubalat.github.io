@@ -58,7 +58,10 @@
                 }
 
                 for (var i = 0; i < selectedQuestions.length < 20; i++) {
-                    document.getElementById('test').appendChild('<div class="test__question">' + selectedQuestions[i] + '</div>');
+                    var node = document.createElement('div');
+                    node.className = 'test__question';
+                    node.innerText = selectedQuestions[i];
+                    document.getElementById('test').appendChild(node);
                 }
             }
 
