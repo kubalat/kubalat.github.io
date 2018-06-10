@@ -49,7 +49,7 @@
 
             function generateTest() {
                 selectedQuestions = [];
-                document.getElementById('test').innerHTML('');
+                document.getElementById('test').innerHTML ='';
                 while (selectedQuestions.length < 20) {
                     var numberOfQuestion = Math.floor(Math.random() * 39);
                     if (!selectedQuestions.find(numberOfQuestion)) {
@@ -67,7 +67,7 @@
 
         <style>
             html, body {
-                margin: 0;
+                margin: 1em 0 1em 0;
                 padding: 0;
             }
             
