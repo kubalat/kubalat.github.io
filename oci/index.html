@@ -24,7 +24,7 @@
 
             function runGame() {
                 $(".container").append("<div class='square' onclick='addCount()'></div>");
-                setInterval(changePosition, 500);
+                setInterval(changePosition, 1000);
                 $("button").prop("disabled", true);
             }
 
@@ -98,10 +98,9 @@
                 position: absolute;
                 top: 250px;
                 left: 250px;
-                background-image: url('/lukas.png');
+                background-color: yellow;
                 box-shadow: 0px 0px 11px #0003;
                 z-index: 1;
-                background-size: contain;
             }
 
             .square:hover {
