@@ -54,6 +54,10 @@ h2 {
     resize: none;
   }
 
+  .form .field > .input > textarea:focus {
+    outline: none;
+  }
+
   .form .field > .input > textarea.bigger {
     min-height: 120px;
     width: 100%;
@@ -111,6 +115,10 @@ h2 {
     resize: none;
     overflow: hidden;
     height: 24px;
+}
+
+.form .points .body > .row .input > textarea:focus {
+  outline: none;
 }
 
 .primary {
