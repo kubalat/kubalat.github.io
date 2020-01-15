@@ -13,123 +13,156 @@
                 <h1>{{ app_title }}</h1>
                 <div class="form form-field-margin">
                     <div class="row">
-                    <div class="w-9/12">
-                        <div class="field">
-                        <div class="label">
-                            Projekt
+                        <div class="w-9/12">
+                            <div class="field">
+                                <div class="label">
+                                    Projekt
+                                </div>
+                                <div class="input">
+                                    <input type="text" v-model="documentation.base_info.project_name" />
+                                </div>
+                            </div>
                         </div>
-                        <div class="input">
-                            <input type="text" v-model="documentation.base_info.project_name" />
-                        </div>
-                        </div>
-                        <div class="field">
-                        <div class="label">
-                            Obchodný názov
-                        </div>
-                        <div class="input">
-                            <input type="text" v-model="documentation.base_info.project_bussiness_name" />
-                        </div>
-                        </div>
-                        <div class="field">
-                        <div class="label">
-                            Segment
-                        </div>
-                        <div class="input">
-                            <input type="text" v-model="documentation.base_info.segment" />
-                        </div>
-                        </div>
-                        <div class="field">
-                        <div class="label">
-                            Stavebník
-                        </div>
-                        <div class="input">
-                            <input type="text" v-model="documentation.base_info.builder" />
-                        </div>
-                        </div>
-                        <div class="field">
-                        <div class="label">
-                            Investor
-                        </div>
-                        <div class="input">
-                            <input type="text" v-model="documentation.base_info.investor" />
-                        </div>
-                        </div>
-                        <div class="field">
-                        <div class="label">
-                            Vec
-                        </div>
-                        <div class="input">
-                            <input type="text" v-model="documentation.base_info.subject" value="Zadávacie podmienky pre projektanta" />
-                        </div>
-                        </div>
-                        <div class="field">
-                        <div class="label">
-                            Stupeň
-                        </div>
-                        <div class="input">
-                            <input type="text" v-model="level"/>
-                        </div>
+                        <div class="w-3/12">
+                            <div class="field">
+                                <div class="label">
+                                    Číslo projektu
+                                </div>
+                                <div class="input">
+                                    <input type="text" v-model="documentation.base_info.project_number" />
+                                </div>
+                                </div>
                         </div>
                     </div>
-                    <div class="w-3/12">
-                        <div class="field">
-                        <div class="label">
-                            Číslo projektu
-                        </div>
-                        <div class="input">
-                            <input type="text" v-model="documentation.base_info.project_number" />
-                        </div>
-                        </div>
-                        <div class="field">
-                        <div class="label">
-                            Kategória štandardu
-                        </div>
-                        <div class="input">
-                            <select v-model="documentation.base_info.category_standard" @change="changeTypeInRule">
-                                <option value="standard">ŠTANDARD</option>
-                                <option value="comfort">COMFORT</option>
-                                <option value="bussiness">BUSSINESS</option>
-                            </select>
-                        </div>
-                        </div>
-                        <div class="field">
-                        <div class="label">
-                            Označenie
-                        </div>
-                        <div class="input">
-                            <select v-model="documentation.base_info.tag">
-                            <option value="dsp">DSP</option>
-                            <option value="drs">DRS</option>
-                            </select>
-                        </div>
-                        </div>
-                        <div class="field">
-                        <div class="label">
-                            Schválil
-                        </div>
-                        <div class="input">
-                            <input type="text" v-model="documentation.base_info.approved_by" />
-                        </div>
-                        </div>
-                        <div class="field">
-                        <div class="label">
-                            Spracoval
-                        </div>
-                        <div class="input">
-                            <input type="text" v-model="documentation.base_info.processed_by" />
-                        </div>
-                        </div>
-                        <div class="field">
-                        <div class="label">
-                            Dátum
-                        </div>
-                        <div class="input">
-                            <input type="text" v-model="documentation.base_info.approved_date"/>
-                        </div>
+                    <div class="row">
+                        <div class="w-9/12">
+                            <div class="field">
+                                <div class="label">
+                                    Obchodný názov
+                                </div>
+                                <div class="input">
+                                    <input type="text" v-model="documentation.base_info.project_bussiness_name" />
+                                </div>
+                                </div>
+                            </div>
+                        <div class="w-3/12">
+                            <div class="field">
+                                <div class="label">
+                                    Kategória štandardu
+                                </div>
+                                <div class="input">
+                                    <select v-model="documentation.base_info.category_standard" @change="changeTypeInRule">
+                                        <option value="standard">ŠTANDARD</option>
+                                        <option value="comfort">COMFORT</option>
+                                        <option value="bussiness">BUSSINESS</option>
+                                    </select>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="w-9/12">
+                            <div class="field">
+                                <div class="label">
+                                    Segment
+                                </div>
+                                <div class="input">
+                                    <input type="text" v-model="documentation.base_info.segment" />
+                                </div>
+                                </div></div>
+                        <div class="w-3/12">
+                            <div class="field">
+                                <div class="label">
+                                    Označenie
+                                </div>
+                                <div class="input">
+                                    <select v-model="documentation.base_info.tag">
+                                    <option value="dsp">DSP</option>
+                                    <option value="drs">DRS</option>
+                                    </select>
+                                </div>
+                                </div>
+                        </div>
                     </div>
-
+                    <div class="row">
+                        <div class="w-9/12">
+                            <div class="field">
+                                <div class="label">
+                                    Stavebník
+                                </div>
+                                <div class="input">
+                                    <input type="text" v-model="documentation.base_info.builder" />
+                                </div>
+                                </div>
+                        </div>
+                        <div class="w-3/12">
+                            <div class="field">
+                                <div class="label">
+                                    Schválil
+                                </div>
+                                <div class="input">
+                                    <input type="text" v-model="documentation.base_info.approved_by" />
+                                </div>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="w-9/12">
+                            <div class="field">
+                                <div class="label">
+                                    Investor
+                                </div>
+                                <div class="input">
+                                    <input type="text" v-model="documentation.base_info.investor" />
+                                </div>
+                                </div>
+                        </div>
+                        <div class="w-3/12">
+                            <div class="field">
+                                <div class="label">
+                                    Spracoval
+                                </div>
+                                <div class="input">
+                                    <input type="text" v-model="documentation.base_info.processed_by" />
+                                </div>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="w-9/12">
+                            <div class="field">
+                                <div class="label">
+                                    Vec
+                                </div>
+                                <div class="input">
+                                    <input type="text" v-model="documentation.base_info.subject" value="Zadávacie podmienky pre projektanta" />
+                                </div>
+                                </div>
+                        </div>
+                        <div class="w-3/12">
+                            <div class="field">
+                                <div class="label">
+                                    Dátum
+                                </div>
+                                <div class="input">
+                                    <input type="text" v-model="documentation.base_info.approved_date"/>
+                                </div>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="w-9/12">
+                            <div class="field">
+                                <div class="label">
+                                    Stupeň
+                                </div>
+                                <div class="input">
+                                    <input type="text" v-model="level"/>
+                                </div>
+                                </div>
+                            </div>
+                        <div class="w-3/12"></div>
+                    </div>
                 </div>
                 <h2>Údaje zadávateľa</h2>
                 <div class="form">

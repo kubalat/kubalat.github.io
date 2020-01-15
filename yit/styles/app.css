@@ -45,7 +45,7 @@ h2 {
   }
 
   .form .field > .input > select  {
-    min-height: 44px;
+    height: 44px;
   }
 
   .form .field > .input > textarea {
